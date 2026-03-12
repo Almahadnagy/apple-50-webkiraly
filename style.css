@@ -10,7 +10,7 @@ body {
 nav {
     position: fixed;
     top: 0;
-    left: 18%;
+    left: 40%;
 }
 
 .navbar {
@@ -22,7 +22,7 @@ nav {
   margin: 15px auto;
   backdrop-filter: blur(11px);
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 2px;
   border-radius: 33px;
 }
@@ -119,4 +119,52 @@ nav {
     border-left-width: 13px;
     border-radius: 15px;
     border-left-style: groove;
+}
+
+@media (max-width: 768px) {
+    nav {
+        left: 4%;
+        position: sticky;
+        top: 15px;
+    }
+
+    .navbar {
+        position: sticky;
+        top: 0px;
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #jobs-speech-1-STANFORD {
+        width: fit-content;
+    }
+
+    #main-page-content q {
+        width: fit-content;
+        margin: 5px;
+    }
+
+    #jobs-albert-watson{
+        width: fit-content;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .navbar {
+        width: 80%;      
+        padding: 5px 20px;
+        gap: 15px;         
+        font-size: 1.1rem; /* Rem, mert megtehetem (: */ 
+    }
+    
+    #main-page-content {
+        width: 85%;  
+        margin: 0 auto;
+    }
+
+    #jobs-speech-1-STANFORD {
+        max-width: 80%;
+        margin: 0 auto;
+    }
 }
