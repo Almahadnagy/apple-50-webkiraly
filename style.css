@@ -105,8 +105,9 @@ nav {
     text-align: center;
     margin-bottom: 75px;
 }
+/* Ezzel most csak tesztelem, hogy az Apple Shortcutom működik-e */
 
-#main-page-content q {
+#main-page-content q { 
     display: block;
     width: 510px;
     font-size: 19pt;
