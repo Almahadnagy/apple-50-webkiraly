@@ -121,6 +121,30 @@ nav {
     border-left-style: groove;
 }
 
+.next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    color: black;
+    font-size: 21pt;
+    margin: 15px;
+}
+
+.next:hover {
+    color: rgb(201, 181, 196);
+    transition-duration: 0.33s;
+    transform: translateY(-3px);
+}
+
+.next:not(:hover) {
+    color: black;
+    transition-duration: 0.33s;
+    transform: translateY(0px);
+}
+
+/* Reszponszivitás */
+
 @media (max-width: 768px) {
     nav {
         left: 4%;
