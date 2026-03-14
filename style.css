@@ -153,6 +153,52 @@ nav {
     margin-bottom: 75px;
 }
 
+/* Fejezetek */
+
+#chapters {
+    width: 100%;
+    background-color: #F1F1F1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box; /* Ezt a neten találtam, nem tudom mit csinál, de működik! */
+}
+
+#chapters h1 {
+    grid-column: 1 / 6;
+    font-size: 55pt;
+    font-weight: 800;
+    padding-bottom: 55px;
+    padding-top: 180px;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid black;
+    padding: 15px;
+    background: white;
+    height: fit-content;
+}
+
+#chapters q { 
+    display: block;
+    width: 510px;
+    font-size: 19pt;
+    text-align: justify;
+    margin: 25px auto;
+    border: 1px solid black;
+    padding: 15px;
+    border-left: 13px groove red;
+    border-radius: 15px;
+}
+
+#chapters p, #chapters li {
+    font-size: 19pt;
+    text-align: justify;        
+    padding: 0 25px;
+}
+
 /* Reszponszivitás */
 
 @media (max-width: 768px) {
@@ -182,6 +228,27 @@ nav {
     #jobs-albert-watson{
         width: fit-content;
     }
+
+    #call-inflation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px auto;
+        width: 100%;
+    }
+
+    #chapters {
+        grid-template-columns: 1fr;
+    }
+
+    #chapters h1, #chapters q, #chapters p, #chapters li {
+        grid-column: 1 / 2; /* Ha jól értelmeztem, ez megfelezi a képernyőn látható grideket? (W3schools, my beloved) */
+    }
+
+    #chapters q {
+        width: 90%;
+        margin: 10px auto;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
@@ -200,5 +267,21 @@ nav {
     #jobs-speech-1-STANFORD {
         max-width: 80%;
         margin: 0 auto;
+    }
+
+    #call-inflation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px auto;
+
+    }
+
+    #chapters {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #chapters h1, #chapters q, #chapters p, #chapters li {
+        grid-column: 1 / 4;
     }
 }
