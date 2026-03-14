@@ -143,6 +143,16 @@ nav {
     transform: translateY(0px);
 }
 
+#call-inflation {
+    display: flex;
+    margin: 25px auto;
+}
+
+.img-sub {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
 /* Reszponszivitás */
 
 @media (max-width: 768px) {
