@@ -238,6 +238,12 @@ nav {
     border-radius: 11px;
 }
 
+#xerox-alto {
+    display: flex;
+    margin: 25px auto;
+    border-radius: 11px;
+}
+
 /* Reszponszivitás */
 
 @media (max-width: 768px) {
@@ -303,6 +309,14 @@ nav {
         margin: 5px auto;
         scale: 80%;
     }
+
+    #xerox-alto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px auto;
+        scale: 80%;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
@@ -346,5 +360,13 @@ nav {
 
     #chapters h1, #chapters q, #chapters p, #chapters li {
         grid-column: 1 / 4;
+    }
+
+    #xerox-alto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px auto;
+        scale: 80%;
     }
 }
