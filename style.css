@@ -244,6 +244,12 @@ nav {
     border-radius: 11px;
 }
 
+#Happy_Mac {
+    display: flex;
+    margin: 25px auto;
+    border-radius: 11px;
+}
+
 /* Reszponszivitás */
 
 @media (max-width: 768px) {
@@ -311,11 +317,9 @@ nav {
     }
 
     #xerox-alto {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 5px auto;
-        scale: 80%;
+        display: block;
+        margin: 0 auto;
+        transform: scale(0.8);
     }
 }
 
@@ -363,10 +367,8 @@ nav {
     }
 
     #xerox-alto {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 5px auto;
-        scale: 80%;
+        display: block;
+        margin: 0 auto;
+        transform: scale(0.8);
     }
 }
