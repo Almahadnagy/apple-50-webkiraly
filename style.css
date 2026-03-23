@@ -250,6 +250,12 @@ nav {
     border-radius: 11px;
 }
 
+#ad-SUPERBOWL { /* Ez csak egy videó! */
+    display: flex;
+    margin: 25px auto;
+    border-radius: 12px;
+}
+
 /* Reszponszivitás */
 
 @media (max-width: 768px) {
@@ -321,6 +327,10 @@ nav {
         margin: 0 auto;
         transform: scale(0.8);
     }
+
+    #ad-SUPERBOWL {
+        width: 380px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
@@ -370,5 +380,9 @@ nav {
         display: block;
         margin: 0 auto;
         transform: scale(0.8);
+    }
+
+    #ad-SUPERBOWL {
+        width: fit-content;
     }
 }
